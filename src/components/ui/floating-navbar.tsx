@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link"; // Import Link from Next.js
 import { ModeToggle } from "./mode-toggle";
+import Image from "next/image";
 
 export const FloatingNav = ({
   navItems,
@@ -62,7 +63,15 @@ export const FloatingNav = ({
           className
         )}
       >
-        <div className="placeholder-icon">Icon</div>
+        <div className="icon">
+          <Image
+            src="/Icon.jpg"
+            alt="icon image"
+            width={64}
+            height={64}
+            className="p-1"
+          />
+        </div>
         <div className="flex justify-center space-x-4">
           {navItems.map((navItem: any, idx: number) =>
             navItem.component ? (

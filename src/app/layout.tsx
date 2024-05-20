@@ -3,6 +3,7 @@ import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
+import { GridSmallBackground } from "@/components/ui/grid-bg";
 
 const robotomono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -25,8 +26,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
+          <GridSmallBackground>
+            <Navbar />
+            {children}
+          </GridSmallBackground>
         </ThemeProvider>
       </body>
     </html>
