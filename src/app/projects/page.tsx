@@ -1,4 +1,4 @@
-import { TabsDemo } from "@/components/Tabs";
+import { TabsDemo } from "@/components/ProjectComponents/Tabs";
 import React from "react";
 
 const ProjectPage = () => {

@@ -26,7 +26,7 @@ const config: Config = {
         sans: ['Roboto Mono', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`, 'dark': '0 4px 14px 0 rgba(255, 255, 255, 0.1)', // replace with your color
       },
       keyframes: {
         "accordion-down": {

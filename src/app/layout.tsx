@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
 import { GridSmallBackground } from "@/components/ui/grid-bg";
+import Footer from "@/components/Footer";
 
 const robotomono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <GridSmallBackground>
             <Navbar />
             {children}
+            <Footer />
           </GridSmallBackground>
         </ThemeProvider>
       </body>
