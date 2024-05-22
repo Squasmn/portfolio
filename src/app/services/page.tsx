@@ -1,4 +1,4 @@
-import { StickyScrollRevealDemo } from "@/components/StickyScrollReveal";
+import { StickyScrollRevealDemo } from "@/components/ServicesComponents/StickyScrollReveal";
 import React from "react";
 
 const ServicesPage = () => {
