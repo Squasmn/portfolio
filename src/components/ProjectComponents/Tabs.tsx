@@ -34,6 +34,7 @@ export function TabsDemo() {
               <Link
                 className="text-indigo-700 hover:text-indigo-500 hover:underline"
                 href="/projects/t4t"
+                target="blank"
               >
                 Learn more
               </Link>
@@ -69,6 +70,7 @@ export function TabsDemo() {
               <Link
                 className="text-indigo-700 hover:text-indigo-500 hover:underline"
                 href="/projects/t4t"
+                target="blank"
               >
                 Learn more
               </Link>
@@ -103,6 +105,7 @@ export function TabsDemo() {
               <Link
                 className="text-indigo-700 hover:text-indigo-500 hover:underline"
                 href="/projects/t4t"
+                target="blank"
               >
                 Learn more
               </Link>
@@ -119,12 +122,28 @@ export function TabsDemo() {
           <h2 className="text-3xl">
             Portfolio attempts throughout my dev carreer
           </h2>
-          <div className="columns-2 pt-5">
+          <div className="grid grid-cols-2 gap-4 pt-5">
             <div>
               <div className="transition duration-500 ease-in-out transform hover:scale-105">
-                <Link href="https://squasmn.github.io/portfolio-project/">
+                <Link
+                  href="https://squasmn.github.io/portfolio-project/"
+                  target="blank"
+                >
                   <Image
-                    src="https://via.placeholder.com/280" // replace with your placeholder image URL
+                    src="/Screenshot 2024-05-22 120231.jpg" // replace with your placeholder image URL
+                    alt="Placeholder Image"
+                    width={500} // replace with your desired width
+                    height={300} // replace with your desired height
+                  />
+                </Link>
+              </div>
+              <div className="transition duration-500 ease-in-out transform hover:scale-105">
+                <Link
+                  href="https://squasmn.github.io/portfolio-project/"
+                  target="blank"
+                >
+                  <Image
+                    src="/Screenshot 2024-05-22 120940.jpg" // replace with your placeholder image URL
                     alt="Placeholder Image"
                     width={500} // replace with your desired width
                     height={300} // replace with your desired height
@@ -136,39 +155,49 @@ export function TabsDemo() {
                 <Link
                   className="text-indigo-700 hover:text-indigo-500 hover:underline"
                   href="https://github.com/Squasmn/portfolio-project"
+                  target="blank"
                 >
                   Github Repo
                 </Link>
                 <Link
                   className="text-indigo-700 hover:text-indigo-500 hover:underline"
                   href="https://squasmn.github.io/portfolio-project/"
+                  target="blank"
                 >
                   Link
                 </Link>
               </div>
             </div>
-            <div>
-              <div className="transition duration-500 ease-in-out transform hover:scale-105">
-                <Link href="https://squasmn.github.io/portfolio-project/">
-                  <Image
-                    src="https://via.placeholder.com/280" // replace with your placeholder image URL
-                    alt="Placeholder Image"
-                    width={500} // replace with your desired width
-                    height={300} // replace with your desired height
-                  />
-                </Link>
+            <div className="flex flex-col justify-between h-full">
+              <div></div>
+              <div className="flex items-center justify-center">
+                <div className=" transition duration-500 ease-in-out transform hover:scale-105">
+                  <Link
+                    href="https://squasmn.github.io/portfolio-project/"
+                    target="blank"
+                  >
+                    <Image
+                      src="/Screenshot 2024-05-22 130454.jpg" // replace with your placeholder image URL
+                      alt="Placeholder Image"
+                      width={500} // replace with your desired width
+                      height={300} // replace with your desired height
+                    />
+                  </Link>
+                </div>
               </div>
               <div className="flex justify-between">
                 <p>08/2023</p>
                 <Link
                   className="text-indigo-700 hover:text-indigo-500 hover:underline"
                   href="https://squasmn.github.io/portfolio-project/"
+                  target="blank"
                 >
                   Github Repo
                 </Link>
                 <Link
                   className="text-indigo-700 hover:text-indigo-500 hover:underline"
                   href="https://squasmn.github.io/portfolio-project/"
+                  target="blank"
                 >
                   Link
                 </Link>
@@ -204,6 +233,7 @@ export function TabsDemo() {
               <Link
                 className="text-indigo-700 hover:text-indigo-500 hover:underline"
                 href="/projects/t4t"
+                target="blank"
               >
                 Learn more
               </Link>
@@ -215,7 +245,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl w-full items-start justify-start my-40">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl w-full items-start justify-start my-40 ">
       <Tabs tabs={tabs} />
     </div>
   );
