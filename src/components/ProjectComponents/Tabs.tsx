@@ -84,38 +84,59 @@ export function TabsDemo() {
       value: "CMS Blog",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-fuchsia-500 bg-gradient-to-br from-indigo-950 to-slate-800 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-          <h2 className="text-3xl">Task for Talent / Talent for Task</h2>
-          <div className="columns-2 pt-5">
-            <div>
-              <p>Dev Blog</p>
-              <p>
-                A Development Blog as my second Project with Content Management
-                tool Sanity. A cool learning project for future use of
-                CMS&apos;s in client applications. Also handy to proliferate my
-                ego (and my knowledge as a Developer and tech enthusiast)
-              </p>
+          <h2 className="text-3xl">Dev Blog with Sanity CMS</h2>
+          <div className="grid grid-cols-2 gap-4 pt-5 h-full">
+            <div className="flex items-center">
+              <div className="items-center">
+                <p>Dev Blog</p>
+                <p>
+                  A Development Blog as my second Project with Content
+                  Management tool Sanity. A cool learning project for future use
+                  of CMS&apos;s in client applications. Also handy to
+                  proliferate my ego (and my knowledge as a Developer and tech
+                  enthusiast)
+                </p>
+              </div>
             </div>
-            <div className=" text-right">
-              <Image
-                src="https://via.placeholder.com/300" // replace with your placeholder image URL
-                alt="Placeholder Image"
-                width={500} // replace with your desired width
-                height={300} // replace with your desired height
-              />
-              <Link
-                className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                href="/projects/t4t"
-                target="blank"
-              >
-                Learn more
-              </Link>
+            <div className="flex flex-col h-full justify-between">
+              <div></div>
+              <div className="flex items-center justify-center">
+                <div className=" transition duration-500 ease-in-out transform hover:scale-105">
+                  <Link href="">
+                    <Image
+                      src="/Screenshot 2024-05-22 152643.jpg" // replace with your placeholder image URL
+                      alt="Placeholder Image"
+                      layout="responsive" // use 'responsive' layout
+                      width={100} // set width relative to the parent container
+                      height={100} // set height relative to the parent container
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="flex justify-between text-right pt-5">
+                <p>04/2023</p>
+                <Link
+                  className="text-indigo-700 hover:text-indigo-500 hover:underline"
+                  href="https://github.com/Squasmn/portfolio-project"
+                  target="blank"
+                >
+                  Github Repo
+                </Link>
+                <Link
+                  className="text-indigo-700 hover:text-indigo-500 hover:underline"
+                  href="https://squasmn.github.io/portfolio-project/"
+                  target="blank"
+                >
+                  Link
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       ),
     },
     {
-      title: "Portfloio Journey",
+      title: "Portfolio Journey",
       value: "Portfolio Journey",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-rose-300 bg-gradient-to-br  from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
@@ -137,7 +158,7 @@ export function TabsDemo() {
                   />
                 </Link>
               </div>
-              <div className="transition duration-500 ease-in-out transform hover:scale-105">
+              <div className="transition duration-500 ease-in-out transform hover:scale-105 ">
                 <Link
                   href="https://squasmn.github.io/portfolio-project/"
                   target="blank"
@@ -150,7 +171,7 @@ export function TabsDemo() {
                   />
                 </Link>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pt-3">
                 <p>04/2023</p>
                 <Link
                   className="text-indigo-700 hover:text-indigo-500 hover:underline"
