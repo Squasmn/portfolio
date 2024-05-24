@@ -85,18 +85,15 @@ export function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-fuchsia-500 bg-gradient-to-br from-indigo-950 to-slate-800 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
           <h2 className="text-3xl">Dev Blog with Sanity CMS</h2>
-          <div className="grid grid-cols-2 gap-4 pt-5 h-full">
+          <div className="grid grid-cols-2 gap-4 pt-20 h-full">
             <div className="flex items-center">
-              <div className="items-center">
-                <p>Dev Blog</p>
-                <p>
-                  A Development Blog as my second Project with Content
-                  Management tool Sanity. A cool learning project for future use
-                  of CMS&apos;s in client applications. Also handy to
-                  proliferate my ego (and my knowledge as a Developer and tech
-                  enthusiast)
-                </p>
-              </div>
+              <p>Dev Blog</p>
+              <p>
+                A Development Blog as my second Project with Content Management
+                tool Sanity. A cool learning project for future use of
+                CMS&apos;s in client applications. Also handy to proliferate my
+                ego (and my knowledge as a Developer and tech enthusiast)
+              </p>
             </div>
             <div className="flex flex-col h-full justify-between">
               <div></div>

@@ -25,6 +25,13 @@ const config: Config = {
       fontFamily: {
         sans: ['Roboto Mono', ...defaultTheme.fontFamily.sans],
       },
+      typography: (theme: any) => ({
+        DEFAULT: {
+          css: {
+            textAlign: 'justify',
+          },
+        },
+      }),
       boxShadow: {
         input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`, 'dark': '0 4px 14px 0 rgba(255, 255, 255, 0.1)', // replace with your color
       },
@@ -53,6 +60,7 @@ const config: Config = {
       },
       width: {
         '90vw': '90vw',
+        '80vw': '80vw',
       },
       height: {
         '100vh': '100vh',
