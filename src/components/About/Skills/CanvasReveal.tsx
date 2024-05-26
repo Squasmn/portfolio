@@ -35,7 +35,7 @@ export function CanvasRevealEffectDemo() {
             ]}
           >
             <CanvasRevealEffect
-              animationSpeed={5.1}
+              animationSpeed={2}
               containerClassName="bg-emerald-900"
             />
           </Card>
@@ -60,8 +60,8 @@ export function CanvasRevealEffectDemo() {
             className="bg-white"
           >
             <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-black"
+              animationSpeed={2}
+              containerClassName="bg-amber-950"
               colors={[
                 [236, 72, 153],
                 [232, 121, 249],
@@ -91,7 +91,7 @@ export function CanvasRevealEffectDemo() {
             ]}
           >
             <CanvasRevealEffect
-              animationSpeed={3}
+              animationSpeed={2}
               containerClassName="bg-sky-600"
               colors={[[125, 211, 252]]}
             />
@@ -105,8 +105,8 @@ export function CanvasRevealEffectDemo() {
             ]}
           >
             <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-black"
+              animationSpeed={2}
+              containerClassName="bg-amber-950"
               colors={[
                 [236, 72, 153],
                 [232, 121, 249],
@@ -125,7 +125,7 @@ export function CanvasRevealEffectDemo() {
             ]}
           >
             <CanvasRevealEffect
-              animationSpeed={3}
+              animationSpeed={2}
               containerClassName="bg-sky-600"
               colors={[[125, 211, 252]]}
             />
@@ -142,7 +142,7 @@ export function CanvasRevealEffectDemo() {
             ]}
           >
             <CanvasRevealEffect
-              animationSpeed={5.1}
+              animationSpeed={2}
               containerClassName="bg-emerald-900"
             />
           </Card>
