@@ -10,7 +10,7 @@ export function CanvasRevealEffectDemo() {
     <>
       {/* <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8"> */}
       <div className="flex justify-center">
-        <div className="grid grid-cols-3 gap-10 py-40 w-[80vw]">
+        <div className="grid grid-cols-3 gap-20 py-40 w-[80vw]">
           <Card
             title="Frontend"
             backTitle="Languages Technologies Frameworks Tools I've worked with"
