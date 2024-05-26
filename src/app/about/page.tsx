@@ -1,7 +1,7 @@
 import { HeroScrollDemo } from "@/components/About/ContainerScroll";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import React from "react";
-import Link from "next/link";
+
 import { SparklesPreview } from "@/components/About/SparklesBeam";
 const AboutPage = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ContainerScroll } from "../ui/container-scroll-animation";
-import Image from "next/image";
+
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { BackgroundGradient } from "../ui/background-gradient";
 import Link from "next/link";

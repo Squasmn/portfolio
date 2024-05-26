@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 
 const Navbar = () => {
