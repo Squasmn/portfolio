@@ -152,6 +152,11 @@ export function CanvasRevealEffectDemo() {
   );
 }
 
+function extractNameFromUrl(url: string): string {
+  const match = url.match(/.*\/(.*?)\/.*\.svg/);
+  return match ? match[1] : "";
+}
+
 const Card = ({
   title,
   backTitle,
@@ -200,16 +205,17 @@ const Card = ({
           {backTitle}
         </h2>
         <div className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 flex flex-wrap justify-center space-evenly h-full">
-          {images.map((image, index) => (
-            <Image
-              key={index}
-              src={image}
-              alt="card"
-              height={50}
-              width={50}
-              className="m-4"
-            />
-          ))}
+          {images.map((image, index) => {
+            const name = extractNameFromUrl(image);
+            return (
+              <div key={index} className="m-4 relative group">
+                <Image src={image} alt={name} height={50} width={50} />
+                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {name}
+                </div>
+              </div>
+            );
+          })}
           {specialImage && (
             <Image
               src={specialImage}
