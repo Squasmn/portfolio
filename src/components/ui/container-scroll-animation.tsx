@@ -36,11 +36,11 @@ export const ContainerScroll = ({
 
   return (
     <div
-      className="h-[60rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
+      className="h-[60rem] md:h-[80rem] flex items-center justify-center relative p-2 "
       ref={containerRef}
     >
       <div
-        className="py-10 md:py-40 w-full relative"
+        className="w-full relative"
         style={{
           perspective: "1000px",
         }}
@@ -83,9 +83,9 @@ export const Card = ({
         rotateX: rotate,
         scale,
       }}
-      className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full  p-2 md:p-6 border  rounded-[30px] shadow-2xl"
+      className="max-w-5xl mx-auto h-[30rem] md:h-[40rem] w-full  p-2 md:p-6 border  rounded-[30px] shadow-2xl"
     >
-      <div className=" h-full w-full flex items-center justify-center overflow-hidden rounded-2xl px-20 md:rounded-2xl md:p-20 ">
+      <div className=" h-full w-full flex items-center justify-center overflow-hidden rounded-2xl px-20 md:rounded-2xl md:p-20">
         {children}
       </div>
     </motion.div>

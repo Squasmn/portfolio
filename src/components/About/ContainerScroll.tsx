@@ -4,6 +4,7 @@ import { ContainerScroll } from "../ui/container-scroll-animation";
 import Image from "next/image";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { BackgroundGradient } from "../ui/background-gradient";
+import Link from "next/link";
 
 const words = `Through the mist of uncertain paths and shifting passions, I found my true calling in the art of code — where every challenge is a canvas, and every solution a stroke of discovery.
 `;
@@ -11,16 +12,27 @@ const words = `Through the mist of uncertain paths and shifting passions, I foun
 export function HeroScrollDemo() {
   return (
     <>
+      <div className="h-full w-full flex flex-col items-center justify-center overflow-hidden rounded-md mt-8 ">
+        <div className="w-full mt-20 h-1 relative">
+          {/* Gradients */}
+          <div className="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full blur-sm" />
+          <div className="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
+          <div className="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-full blur-sm" />
+          <div className="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-full" />
+        </div>
+      </div>
       <div className="flex flex-col overflow-hidden">
         <ContainerScroll
           titleComponent={
             <>
-              <h1 className="text-4xl font-semibold text-black dark:text-white">
-                learn <br />
-                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                  more
-                </span>
-              </h1>
+              <Link href="/about/skills">
+                <h1 className="text-4xl font-semibold text-black dark:text-white">
+                  learn <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    more
+                  </span>
+                </h1>
+              </Link>
             </>
           }
         >

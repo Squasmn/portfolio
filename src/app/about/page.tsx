@@ -2,7 +2,7 @@ import { HeroScrollDemo } from "@/components/About/ContainerScroll";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import React from "react";
 import Link from "next/link";
-
+import { SparklesPreview } from "@/components/About/SparklesBeam";
 const AboutPage = () => {
   return (
     <div>
@@ -11,7 +11,7 @@ const AboutPage = () => {
 
         <div className="flex flex-col items-center h-full w-full mt-4">
           <h2 className="text-3xl">About Me</h2>
-          <div className="text-lg pt-4 prose">
+          <div className="text-lg pt-4 prose mb-10">
             <p className="mb-4">
               Born in 1993 I consider myself a true Millenial. In childhood days
               much of my time was spent either on the basketball court or
@@ -44,8 +44,8 @@ const AboutPage = () => {
           </div>
         </div>
       </TracingBeam>
-
-      <div className="h-96"></div>
+      <SparklesPreview />
+      <div className="h-64 bg-black"></div>
     </div>
   );
 };

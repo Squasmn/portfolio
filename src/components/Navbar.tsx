@@ -16,6 +16,7 @@ const Navbar = () => {
       name: "Projects",
       link: "/projects",
     },
+    { name: "Skills", link: "/about/skills" },
     {
       name: "Services",
       link: "/services",
