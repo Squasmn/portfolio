@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 export const StickyScroll = ({
   content,
   contentClassName,
-  className,
 }: {
   content: {
     title: string;
