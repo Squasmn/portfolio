@@ -1,8 +1,8 @@
 import React from "react";
 import GithubComponent from "@/components/svgs/socials/githubComponent";
-import MailComponent from "@/components/svgs/socials/MailComponent";
-import LinkedinComponent from "@/components/svgs/socials/LinkedinComponent";
-import BlogComponent from "@/components/svgs/socials/BlogComponent";
+import MailComponent from "@/components/svgs/socials/mailComponent";
+import LinkedinComponent from "@/components/svgs/socials/linkedinComponent";
+import BlogComponent from "@/components/svgs/socials/blogComponent";
 import Link from "next/link";
 
 const Footer = () => {
