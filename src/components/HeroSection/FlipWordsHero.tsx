@@ -4,13 +4,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { AuroraBackground } from "../ui/aurora-background";
 
 export function FlipWordsHero() {
-  const words = [
-    "modern",
-    "customized",
-    "responsive",
-    "pixel-perfect",
-    "beautiful",
-  ];
+  const words = ["modern", "customized", "responsive", "beautiful"];
 
   return (
     <div className="h-[40rem] flex justify-center items-center px-4">

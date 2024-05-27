@@ -101,7 +101,7 @@ export function TabsDemo() {
                 <div className=" transition duration-500 ease-in-out transform hover:scale-105">
                   <Link href="">
                     <Image
-                      src="/Screenshot 2024-05-22 152643.jpg" // replace with your placeholder image URL
+                      src="/images/Screenshot 2024-05-22 152643.jpg" // replace with your placeholder image URL
                       alt="Placeholder Image"
                       layout="responsive" // use 'responsive' layout
                       width={100} // set width relative to the parent container
@@ -148,7 +148,7 @@ export function TabsDemo() {
                   target="blank"
                 >
                   <Image
-                    src="/Screenshot 2024-05-22 120231.jpg" // replace with your placeholder image URL
+                    src="/images/Screenshot 2024-05-22 120231.jpg" // replace with your placeholder image URL
                     alt="Placeholder Image"
                     width={500} // replace with your desired width
                     height={300} // replace with your desired height
@@ -161,7 +161,7 @@ export function TabsDemo() {
                   target="blank"
                 >
                   <Image
-                    src="/Screenshot 2024-05-22 120940.jpg" // replace with your placeholder image URL
+                    src="/images/Screenshot 2024-05-22 120940.jpg" // replace with your placeholder image URL
                     alt="Placeholder Image"
                     width={500} // replace with your desired width
                     height={300} // replace with your desired height
@@ -195,7 +195,7 @@ export function TabsDemo() {
                     target="blank"
                   >
                     <Image
-                      src="/Screenshot 2024-05-22 130454.jpg" // replace with your placeholder image URL
+                      src="/images/Screenshot 2024-05-22 130454.jpg" // replace with your placeholder image URL
                       alt="Placeholder Image"
                       width={500} // replace with your desired width
                       height={300} // replace with your desired height
