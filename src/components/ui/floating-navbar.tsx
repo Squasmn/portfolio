@@ -65,7 +65,7 @@ export const FloatingNav = ({
       >
         <div className="icon">
           <Image
-            src="/images/Icon.jpg"
+            src="https://github.com/Squasmn/portfolio/blob/main/public/images/Icon.jpg"
             alt="icon image"
             width={64}
             height={64}
