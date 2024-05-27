@@ -8,12 +8,13 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link"; // Import Link from Next.js
-import { ModeToggle } from "./mode-toggle";
+
 import Image from "next/image";
 
 export const FloatingNav = ({
   navItems,
   className,
+  dropdownMenu,
 }: {
   navItems: {
     name?: string;
@@ -22,6 +23,7 @@ export const FloatingNav = ({
     component?: JSX.Element;
   }[];
   className?: string;
+  dropdownMenu?: JSX.Element;
 }) => {
   const { scrollYProgress } = useScroll();
 
@@ -63,15 +65,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        <div className="icon">
-          <Image
-            src="/images/Icon.jpg"
-            alt="icon image"
-            width={64}
-            height={64}
-            className="p-1"
-          />
-        </div>
+        {dropdownMenu}
         <div className="flex justify-center space-x-4">
           {navItems.map((navItem: any, idx: number) =>
             navItem.component ? (
@@ -91,9 +85,16 @@ export const FloatingNav = ({
               </Link>
             )
           )}
+        </div>{" "}
+        <div className="icon">
+          <Image
+            src="/images/Icon.jpg"
+            alt="icon image"
+            width={64}
+            height={64}
+            className="p-1"
+          />
         </div>
-
-        <ModeToggle />
       </motion.div>
     </AnimatePresence>
   );

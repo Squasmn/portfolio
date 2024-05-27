@@ -4,6 +4,7 @@ import MailComponent from "@/components/svgs/socials/mailComponent";
 import LinkedinComponent from "@/components/svgs/socials/linkedinComponent";
 import BlogComponent from "@/components/svgs/socials/blogComponent";
 import Link from "next/link";
+import { ModeToggle } from "./ui/mode-toggle";
 
 const Footer = () => {
   return (
@@ -47,7 +48,10 @@ const Footer = () => {
       <div className="flex items-center text-sm">
         Made with ❤️ by David Emmerich - 2024
       </div>
-      <div className="flex items-center text-3xl">𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</div>
+
+      <div className="flex items-center text-3xl">
+        <ModeToggle />
+      </div>
     </div>
   );
 };
