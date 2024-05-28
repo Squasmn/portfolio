@@ -3,6 +3,7 @@ import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import { Meteors } from "../ui/meteors";
 import { BackgroundGradient } from "../ui/background-gradient";
+import Image from "next/image";
 
 const content = [
   {
@@ -12,7 +13,14 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white relative">
         <Meteors number={40} className="absolute inset-0 z-10" />
-        <div className="z-20">Collaborative Editing</div>
+        <div className="z-20">
+          <Image
+            src="/assets/icons/illustrationsServices/communicate.svg"
+            alt="communication illustration"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     ),
   },
@@ -23,7 +31,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Meteors number={40} className="absolute inset-0 z-10" />
-        <div className="z-20">Collaborative Editing</div>
+        <div className="z-20"></div>
       </div>
     ),
   },
@@ -34,7 +42,14 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         <Meteors number={40} className="absolute inset-0 z-10" />
-        <div className="z-20">Collaborative Editing</div>
+        <div className="z-20">
+          <Image
+            src="/assets/icons/illustrationsServices/brain.svg"
+            alt="brains illustration"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     ),
   },
@@ -45,7 +60,14 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <Meteors number={40} className="absolute inset-0 z-10" />
-        <div className="z-20">Collaborative Editing</div>
+        <div className="z-20">
+          <Image
+            src="/assets/icons/illustrationsServices/happycoder.svg"
+            alt="happycoder illustration"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     ),
   },
