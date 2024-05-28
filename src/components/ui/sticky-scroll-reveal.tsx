@@ -42,9 +42,9 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "var(--slate-900)",
+    "var(--slate-950)",
     "var(--black)",
-    "var(--neutral-900)",
+    "var(--neutral-950)",
   ];
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
@@ -56,7 +56,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[60vh] w-[80vw] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="h-[60vh] w-[80vw] overflow-y-auto flex justify-center relative space-x-10 rounded-3xl p-10 scrollbar-hide"
       ref={ref}
     >
       <div className="div relative flex items-start px-4 w-[30vw]">
@@ -95,7 +95,7 @@ export const StickyScroll = ({
           background: linearGradients[activeCard % linearGradients.length],
         }}
         className={cn(
-          "hidden lg:block h-[20vw] w-[30vw] rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-[20vw] w-[30vw] rounded-3xl bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
