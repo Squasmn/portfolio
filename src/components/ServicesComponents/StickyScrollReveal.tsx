@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
-import Image from "next/image";
 import { Meteors } from "../ui/meteors";
 import { BackgroundGradient } from "../ui/background-gradient";
 
