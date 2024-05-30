@@ -31,7 +31,14 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Meteors number={40} className="absolute inset-0 z-10" />
-        <div className="z-20"></div>
+        <div className="z-20">
+          <Image
+            src="/assets/icons/illustrationsServices/draftdesign.svg"
+            alt="brains illustration"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     ),
   },
@@ -78,7 +85,14 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <Meteors number={40} className="absolute inset-0 z-10" />
-        <div className="z-20">Collaborative Editing</div>
+        <div className="z-20">
+          <Image
+            src="/assets/icons/illustrationsServices/maintenance.svg"
+            alt="maintenance illustration"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     ),
   },
@@ -89,7 +103,14 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Meteors number={40} className="absolute inset-0 z-10" />
-        <div className="z-20">Collaborative Editing</div>
+        <div className="z-20">
+          <Image
+            src="/assets/icons/illustrationsServices/custom.svg"
+            alt="custom enquiries illustration"
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     ),
   },

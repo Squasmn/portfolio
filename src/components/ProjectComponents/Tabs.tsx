@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
 import Link from "next/link";
 import { BackgroundGradient } from "../ui/background-gradient";
+import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 
 export function TabsDemo() {
   const tabs = [
@@ -66,8 +67,8 @@ export function TabsDemo() {
               </div>
               <div className=" text-right">
                 <Image
-                  src="https://via.placeholder.com/300" // replace with your placeholder image URL
-                  alt="Placeholder Image"
+                  src="/images/FaceDetect/Screenshot 2024-05-28 195407.jpg" // replace with your placeholder image URL
+                  alt="FaceDetect overview image"
                   width={500} // replace with your desired width
                   height={300} // replace with your desired height
                 />
@@ -141,8 +142,8 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Portfolio Journey",
-      value: "Portfolio Journey",
+      title: "Portfolio 1",
+      value: "Portfolio 1",
       content: (
         <BackgroundGradient>
           <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-rose-300 bg-gradient-to-br  from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
@@ -150,6 +151,7 @@ export function TabsDemo() {
               Portfolio attempts throughout my dev carreer
             </h2>
             <div className="grid grid-cols-2 gap-4 pt-5">
+              <div className="flex flex-col justify-between h-full"></div>
               <div>
                 <div className="transition duration-500 ease-in-out transform hover:scale-105">
                   <Link
@@ -195,6 +197,22 @@ export function TabsDemo() {
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+        </BackgroundGradient>
+      ),
+    },
+    {
+      title: "Portfolio 2",
+      value: "Portfolio 2",
+      content: (
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-rose-300 bg-gradient-to-br  from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
+            <h2 className="text-3xl">
+              Portfolio attempts throughout my dev carreer
+            </h2>
+            <div className="grid grid-cols-2 gap-4 pt-5">
+              <div>hi</div>
               <div className="flex flex-col justify-between h-full">
                 <div></div>
                 <div className="flex items-center justify-center">
@@ -235,36 +253,60 @@ export function TabsDemo() {
         </BackgroundGradient>
       ),
     },
+
     {
-      title: "Country Flags",
-      value: "Country Flags",
+      title: "Portfolio 4",
+      value: "Portfolio 4",
       content: (
         <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-lime-950 bg-gradient-to-br from-purple-700 to-violet-900 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-            <h2 className="text-3xl">Country Flags</h2>
-            <div className="columns-2 pt-5">
-              <div>
-                <p>from a challenge during my DCI course</p>
-                <p>
-                  A small project displaying flags of countries and general
-                  info. First project with React and API calls. Also the first
-                  attempt at sorting fetched data. A fun little project to get
-                  started with React.
-                </p>
-              </div>
-              <div className=" text-right">
-                <Image
-                  src="https://via.placeholder.com/300" // replace with your placeholder image URL
-                  alt="Placeholder Image"
-                  width={500} // replace with your desired width
-                  height={300} // replace with your desired height
-                />
+          <div className="w-full overflow-hidden relative h-full rounded-2xl font-bold text-rose-300 bg-gradient-to-br from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
+            <h2 className="text-3xl m-2">
+              Portfolio attempts throughout my dev carreer
+            </h2>
+            <CardContainer className="inter-var">
+              <CardBody className="grid grid-cols-2 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl border p-5 ">
+                <CardItem
+                  as="p"
+                  translateZ="70"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 m-auto dark:border-white/[0.2] border-black/[0.1] border rounded-xl"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  corporis. Minus sunt labore harum delectus odit architecto
+                  esse vel! Vitae, esse obcaecati. Labore, tempore, recusandae
+                  aperiam veritatis officia cupiditate doloremque molestiae,
+                  quaerat sint sed qui magnam neque. Aperiam laboriosam nulla
+                  magnam veniam maiores quisquam libero. Officiis excepturi
+                  magnam nemo voluptatum! Quisquam, quidem. Quisquam, quidem.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                </CardItem>
+
+                <CardItem translateZ="70" className="w-full pr-4">
+                  <Image
+                    src="/images/FaceDetect/Screenshot 2024-05-28 194319.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl "
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <div className="flex justify-center">
+              <div className="w-[80%] flex justify-between py-4">
+                <p>08/2023</p>
                 <Link
                   className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                  href="/projects/t4t"
+                  href="https://squasmn.github.io/portfolio-project/"
                   target="blank"
                 >
-                  Learn more
+                  Github Repo
+                </Link>
+                <Link
+                  className="text-indigo-700 hover:text-indigo-500 hover:underline"
+                  href="https://squasmn.github.io/portfolio-project/"
+                  target="blank"
+                >
+                  Link
                 </Link>
               </div>
             </div>
