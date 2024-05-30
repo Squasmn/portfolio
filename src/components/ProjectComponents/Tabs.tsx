@@ -253,7 +253,92 @@ export function TabsDemo() {
         </BackgroundGradient>
       ),
     },
+    {
+      title: "Portfolio 3",
+      value: "Portfolio 3",
+      content: (
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-20 font-bold text-rose-300 bg-gradient-to-br from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark flex justify-center align-center">
+            <div className="w-full h-full flex flex-wrap justify-between">
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white pb-5"
+                  >
+                    Make things float in air
+                  </CardItem>
 
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 pb-5"
+                  >
+                    Hover over this card to unleash the power of CSS perspective
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src="/images/FaceDetect/Screenshot 2024-05-28 194319.jpg"
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="mt-10 flex justify-between">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://twitter.com/mannupaaji"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://twitter.com/mannupaaji"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+              <CardContainer className="inter-var h-full ">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                  >
+                    Make things float in air
+                  </CardItem>
+
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  >
+                    Hover over this card to unleash the power of CSS perspective
+                  </CardItem>
+                  {/* <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src="/images/FaceDetect/Screenshot 2024-05-28 194319.jpg"
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem> */}
+                </CardBody>
+              </CardContainer>
+            </div>
+          </div>
+        </BackgroundGradient>
+      ),
+    },
     {
       title: "Portfolio 4",
       value: "Portfolio 4",
