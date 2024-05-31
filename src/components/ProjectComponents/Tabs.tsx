@@ -12,269 +12,20 @@ export function TabsDemo() {
       value: "T4T",
       content: (
         <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-white bg-gradient-to-br from-zinc-900 to-gray-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-            <h2 className="text-3xl">Task for Talent / Talent for Task</h2>
-            <div className="columns-2 pt-5">
-              <div className="my-auto">
-                <p>Final Project of the DCI Fullstack Development course</p>
-                <p>
-                  Freelancing platform for Talents and Task offers. An open
-                  approach to the saturated gig economy, offering low entry
-                  barriers for both sides. The platform is designed to serve as
-                  a stepping stone for Talents to build their portfolio and gain
-                  experience, while Task offers can find affordable solutions
-                  for their projects. Or is it really just a black board with
-                  tags for skills? 😱
-                </p>
-              </div>
-              <div className=" text-right">
-                <Image
-                  src="https://via.placeholder.com/300" // replace with your placeholder image URL
-                  alt="Placeholder Image"
-                  width={500} // replace with your desired width
-                  height={300} // replace with your desired height
-                />
-                <Link
-                  className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                  href="/projects/t4t"
-                  target="blank"
-                >
-                  Learn more
-                </Link>
-              </div>
-            </div>
-          </div>
-        </BackgroundGradient>
-      ),
-    },
-
-    {
-      title: "Face Detect",
-      value: "Face Detect",
-      content: (
-        <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-orange-500 bg-gradient-to-br from-indigo-700 to-violet-900 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-            <h2 className="text-3xl">Face Detect</h2>
-            <div className="columns-2 pt-5">
-              <div>
-                <p>First Fullstack Web Application</p>
-                <p>
-                  Small Project displaying fundamental understanding of Frontend
-                  Design with React and Backend with Node.js. The application
-                  allows you to detect faces in images using the ClarifAI face
-                  detect model via an API.
-                </p>
-              </div>
-              <div className=" text-right">
-                <Image
-                  src="/images/FaceDetect/Screenshot 2024-05-28 195407.jpg" // replace with your placeholder image URL
-                  alt="FaceDetect overview image"
-                  width={500} // replace with your desired width
-                  height={300} // replace with your desired height
-                />
-                <Link
-                  className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                  href="/projects/t4t"
-                  target="blank"
-                >
-                  Learn more
-                </Link>
-              </div>
-            </div>
-          </div>
-        </BackgroundGradient>
-      ),
-    },
-    {
-      title: "CMS Blog",
-      value: "CMS Blog",
-      content: (
-        <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-fuchsia-500 bg-gradient-to-br from-indigo-950 to-slate-800 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-            <h2 className="text-3xl">Dev Blog with Sanity CMS</h2>
-            <div className="grid grid-cols-2 gap-4 pt-20 h-full">
-              <div className="flex items-center">
-                <p>Dev Blog</p>
-                <p>
-                  A Development Blog as my second Project with Content
-                  Management tool Sanity. A cool learning project for future use
-                  of CMS&apos;s in client applications. Also handy to
-                  proliferate my ego (and my knowledge as a Developer and tech
-                  enthusiast)
-                </p>
-              </div>
-              <div className="flex flex-col h-full justify-between">
-                <div></div>
-                <div className="flex items-center justify-center">
-                  <div className=" transition duration-500 ease-in-out transform hover:scale-105">
-                    <Link href="">
-                      <Image
-                        src="/images/Screenshot-2024-05-22-152643.jpg" // replace with your placeholder image URL
-                        alt="Placeholder Image"
-                        layout="responsive" // use 'responsive' layout
-                        width={100} // set width relative to the parent container
-                        height={100} // set height relative to the parent container
-                      />
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex justify-between text-right pt-5">
-                  <p>04/2023</p>
-                  <Link
-                    className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                    href="https://github.com/Squasmn/portfolio-project"
-                    target="blank"
-                  >
-                    Github Repo
-                  </Link>
-                  <Link
-                    className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                    href="https://squasmn.github.io/portfolio-project/"
-                    target="blank"
-                  >
-                    Link
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </BackgroundGradient>
-      ),
-    },
-    {
-      title: "Portfolio 1",
-      value: "Portfolio 1",
-      content: (
-        <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-rose-300 bg-gradient-to-br  from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-            <h2 className="text-3xl">
-              Portfolio attempts throughout my dev carreer
-            </h2>
-            <div className="grid grid-cols-2 gap-4 pt-5">
-              <div className="flex flex-col justify-between h-full"></div>
-              <div>
-                <div className="transition duration-500 ease-in-out transform hover:scale-105">
-                  <Link
-                    href="https://squasmn.github.io/portfolio-project/"
-                    target="blank"
-                  >
-                    <Image
-                      src="/images/Screenshot-2024-05-22-120231.jpg" // replace with your placeholder image URL
-                      alt="Placeholder Image"
-                      width={500} // replace with your desired width
-                      height={300} // replace with your desired height
-                    />
-                  </Link>
-                </div>
-                <div className="transition duration-500 ease-in-out transform hover:scale-105 ">
-                  <Link
-                    href="https://squasmn.github.io/portfolio-project/"
-                    target="blank"
-                  >
-                    <Image
-                      src="/images/Screenshot-2024-05-22-120940.jpg" // replace with your placeholder image URL
-                      alt="Placeholder Image"
-                      width={500} // replace with your desired width
-                      height={300} // replace with your desired height
-                    />
-                  </Link>
-                </div>
-                <div className="flex justify-between pt-3">
-                  <p>04/2023</p>
-                  <Link
-                    className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                    href="https://github.com/Squasmn/portfolio-project"
-                    target="blank"
-                  >
-                    Github Repo
-                  </Link>
-                  <Link
-                    className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                    href="https://squasmn.github.io/portfolio-project/"
-                    target="blank"
-                  >
-                    Link
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </BackgroundGradient>
-      ),
-    },
-    {
-      title: "Portfolio 2",
-      value: "Portfolio 2",
-      content: (
-        <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-rose-300 bg-gradient-to-br  from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-            <h2 className="text-3xl">
-              Portfolio attempts throughout my dev carreer
-            </h2>
-            <div className="grid grid-cols-2 gap-4 pt-5">
-              <div>hi</div>
-              <div className="flex flex-col justify-between h-full">
-                <div></div>
-                <div className="flex items-center justify-center">
-                  <div className=" transition duration-500 ease-in-out transform hover:scale-105">
-                    <Link
-                      href="https://squasmn.github.io/portfolio-project/"
-                      target="blank"
-                    >
-                      <Image
-                        src="/images/Screenshot-2024-05-22-130454.jpg" // replace with your placeholder image URL
-                        alt="Placeholder Image"
-                        width={500} // replace with your desired width
-                        height={300} // replace with your desired height
-                      />
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex justify-between">
-                  <p>08/2023</p>
-                  <Link
-                    className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                    href="https://squasmn.github.io/portfolio-project/"
-                    target="blank"
-                  >
-                    Github Repo
-                  </Link>
-                  <Link
-                    className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                    href="https://squasmn.github.io/portfolio-project/"
-                    target="blank"
-                  >
-                    Link
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </BackgroundGradient>
-      ),
-    },
-    {
-      title: "Portfolio 3",
-      value: "Portfolio 3",
-      content: (
-        <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-20 font-bold text-rose-300 bg-gradient-to-br from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark flex justify-center align-center">
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-white bg-gradient-to-br  from-indigo-900 to-rose-900 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
             <div className="w-full h-full flex flex-wrap justify-between">
               <CardContainer className="inter-var h-full">
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full">
-                  <CardItem
-                    translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white pb-5"
-                  >
-                    Make things float in air
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full p-1">
+                  <CardItem translateZ="50" className="text-xl font-bold pb-5">
+                    T4T Task for Talent / Talent for Task
                   </CardItem>
 
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 pb-5"
+                    className=" text-sm max-w-sm mt-2 pb-5 px-5"
                   >
-                    Hover over this card to unleash the power of CSS perspective
+                    Final Project of the DCI Fullstack Development course
                   </CardItem>
                   <CardItem translateZ="100" className="w-full mt-4">
                     <Image
@@ -291,7 +42,7 @@ export function TabsDemo() {
                       as={Link}
                       href="https://twitter.com/mannupaaji"
                       target="__blank"
-                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                      className="px-4 py-2 rounded-xl text-xs font-normal"
                     >
                       Try now →
                     </CardItem>
@@ -300,38 +51,111 @@ export function TabsDemo() {
                       as={Link}
                       href="https://twitter.com/mannupaaji"
                       target="__blank"
-                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                      className="px-4 py-2 rounded-xl text-xs font-normal "
                     >
                       Try now →
                     </CardItem>
                   </div>
                 </CardBody>
               </CardContainer>
-              <CardContainer className="inter-var h-full ">
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full">
-                  <CardItem
-                    translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
-                  >
-                    Make things float in air
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full flex flex-col justify-start p-1">
+                  <CardItem translateZ="50" className="text-xl font-bold ">
+                    Teamwork with Halid Kutsal
+                  </CardItem>
+
+                  <div className="flex-grow flex items-center">
+                    <CardItem
+                      as="p"
+                      translateZ="60"
+                      className=" text-sm max-w-sm mt-2 px-5"
+                    >
+                      Freelancing platform for Talents and Task offers. An open
+                      approach to the saturated gig economy, offering low entry
+                      barriers for both sides. The platform is designed to serve
+                      as a stepping stone for Talents to build their portfolio
+                      and gain experience, while Task offers can find affordable
+                      solutions for their projects. Or is it really just a black
+                      board with tags for skills? 😱
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+            </div>
+          </div>
+        </BackgroundGradient>
+      ),
+    },
+
+    {
+      title: "Face Detect",
+      value: "Face Detect",
+      content: (
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 font-bold text-orange-500 bg-gradient-to-br from-indigo-700 to-violet-900 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
+            <div className="w-full h-full flex justify-between">
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full p-1  text-orange-500">
+                  <CardItem translateZ="50" className="text-xl font-bold pb-5">
+                    Face Detect
                   </CardItem>
 
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className=" text-sm max-w-sm mt-2 px-5"
                   >
-                    Hover over this card to unleash the power of CSS perspective
+                    Final Project of ZTM Zero to Mastery Full Stack course
                   </CardItem>
-                  {/* <CardItem translateZ="100" className="w-full mt-4">
+                  <CardItem translateZ="100" className="w-full mt-4">
                     <Image
-                      src="/images/FaceDetect/Screenshot 2024-05-28 194319.jpg"
+                      src="/images/FaceDetect/Screenshot 2024-05-31 113703.jpg"
                       height="1000"
                       width="1000"
                       className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
-                  </CardItem> */}
+                  </CardItem>
+                  <div className="mt-10 flex justify-between">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://twitter.com/mannupaaji"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal "
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://twitter.com/mannupaaji"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal "
+                    >
+                      Try now →
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full flex flex-col justify-start p-1  text-orange-500">
+                  <CardItem translateZ="50" className="text-xl font-bold">
+                    My first Fullstack Web Application
+                  </CardItem>
+
+                  <div className="flex-grow flex items-center">
+                    <CardItem
+                      as="p"
+                      translateZ="60"
+                      className=" text-sm max-w-sm mt-2 px-5"
+                    >
+                      Small Project displaying fundamental understanding of
+                      Frontend Design with React and Backend with Node.js. The
+                      application allows you to detect faces in images using the
+                      ClarifAI face detect model via an API.
+                    </CardItem>
+                  </div>
                 </CardBody>
               </CardContainer>
             </div>
@@ -340,60 +164,237 @@ export function TabsDemo() {
       ),
     },
     {
-      title: "Portfolio 4",
-      value: "Portfolio 4",
+      title: "CMS Blog",
+      value: "CMS Blog",
       content: (
         <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl font-bold text-rose-300 bg-gradient-to-br from-slate-900 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
-            <h2 className="text-3xl m-2">
-              Portfolio attempts throughout my dev carreer
-            </h2>
-            <CardContainer className="inter-var">
-              <CardBody className="grid grid-cols-2 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl border p-5 ">
-                <CardItem
-                  as="p"
-                  translateZ="70"
-                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 m-auto dark:border-white/[0.2] border-black/[0.1] border rounded-xl"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                  corporis. Minus sunt labore harum delectus odit architecto
-                  esse vel! Vitae, esse obcaecati. Labore, tempore, recusandae
-                  aperiam veritatis officia cupiditate doloremque molestiae,
-                  quaerat sint sed qui magnam neque. Aperiam laboriosam nulla
-                  magnam veniam maiores quisquam libero. Officiis excepturi
-                  magnam nemo voluptatum! Quisquam, quidem. Quisquam, quidem.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                </CardItem>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-fuchsia-500 bg-gradient-to-br from-sky-800 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
+            <div className="w-full h-full flex justify-between">
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full p-1  text-fuchsia-400">
+                  <CardItem translateZ="50" className="text-xl font-bold pb-5">
+                    DevBlog
+                  </CardItem>
 
-                <CardItem translateZ="70" className="w-full pr-4">
-                  <Image
-                    src="/images/FaceDetect/Screenshot 2024-05-28 194319.jpg"
-                    height="1000"
-                    width="1000"
-                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl "
-                    alt="thumbnail"
-                  />
-                </CardItem>
-              </CardBody>
-            </CardContainer>
-            <div className="flex justify-center">
-              <div className="w-[80%] flex justify-between py-4">
-                <p>08/2023</p>
-                <Link
-                  className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                  href="https://squasmn.github.io/portfolio-project/"
-                  target="blank"
-                >
-                  Github Repo
-                </Link>
-                <Link
-                  className="text-indigo-700 hover:text-indigo-500 hover:underline"
-                  href="https://squasmn.github.io/portfolio-project/"
-                  target="blank"
-                >
-                  Link
-                </Link>
-              </div>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className=" text-sm max-w-sm mt-2 px-5"
+                  >
+                    Blog with managed content
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src="/images/Screenshot 2024-05-31 121453.jpg"
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="mt-10 flex justify-between">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://twitter.com/mannupaaji"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal "
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://twitter.com/mannupaaji"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal "
+                    >
+                      Try now →
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full flex flex-col justify-start p-1  text-fuchsia-400">
+                  <CardItem translateZ="50" className="text-xl font-bold">
+                    My first Fullstack Web Application
+                  </CardItem>
+
+                  <div className="flex-grow flex items-center">
+                    <CardItem
+                      as="p"
+                      translateZ="60"
+                      className=" text-sm max-w-sm mt-2 px-5"
+                    >
+                      A Development Blog as my second Project with Content
+                      Management tool Sanity. A cool learning project for future
+                      use of CMS&apos;s in client applications. Also handy to
+                      proliferate my ego (and my knowledge as a Developer and
+                      tech enthusiast)
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+            </div>
+          </div>
+        </BackgroundGradient>
+      ),
+    },
+    {
+      title: "Portfolio 08/23",
+      value: "Portfolio 08/23",
+      content: (
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-rose-300 bg-gradient-to-br  from-rose-800 to-indigo-950 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
+            <div className="w-full h-full flex justify-between">
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full p-1  text-blue-300">
+                  <CardItem translateZ="50" className="text-xl font-bold pb-5">
+                    Portfolio 08/23
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className=" text-sm max-w-sm mt-2 px-5"
+                  >
+                    React Portfolio
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src="/images/Screenshot-2024-05-22-130454.jpg"
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="mt-10 flex justify-between">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://github.com/Squasmn/portfolio-project"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal hover:underline"
+                    >
+                      Github Repo →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://squasmn.github.io/portfolio-project/"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal hover:underline"
+                    >
+                      Try now →
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full flex flex-col justify-start p-1  text-blue-300">
+                  <CardItem translateZ="50" className="text-xl font-bold">
+                    Adding JS and React
+                  </CardItem>
+
+                  <div className="flex-grow flex items-center">
+                    <CardItem
+                      as="p"
+                      translateZ="60"
+                      className=" text-sm max-w-sm mt-2 px-5"
+                    >
+                      A new Portfolio concluding the Jsvascript and React
+                      modules of the DCI course. First interactive Website with
+                      a few animations and a more modern design. Grasssping
+                      these many new concepts was a challenge and finishing a
+                      stretch, but I used to be content with the outcome.
+                      Certainly theres weaknesses still present, but I decided
+                      to kkeep this Portolio untouched as well to further be
+                      able to display the milestones of my Dev journey. Live on
+                      Github Pages for you to explore.
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+            </div>
+          </div>
+        </BackgroundGradient>
+      ),
+    },
+    {
+      title: "Portfolio 04/23",
+      value: "Portfolio 04/23",
+      content: (
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  font-bold text-rose-300 bg-gradient-to-br  from-teal-700  to-cyan-800 shadow-2xl transition-shadow duration-200 ease-in-out dark:hover:shadow-dark">
+            <div className="w-full h-full flex justify-between">
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full p-1  text-fuchsia-400">
+                  <CardItem translateZ="50" className="text-xl font-bold pb-5">
+                    Portfolio 04/23
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className=" text-sm max-w-sm mt-2 px-5"
+                  >
+                    basic HTML CSS project during the early days of the DCI
+                    course
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src="/images/Screenshot-2024-05-22-120231.jpg"
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="mt-10 flex justify-between">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://github.com/Squasmn/portfolio-project"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal hover:underline"
+                    >
+                      Github Repo →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="https://squasmn.github.io/portfolio-project/"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal hover:underline"
+                    >
+                      Try now →
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+              <CardContainer className="inter-var h-full">
+                <CardBody className="bg-black/[0.2] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full w-full flex flex-col justify-start p-1  text-fuchsia-400">
+                  <CardItem translateZ="50" className="text-xl font-bold">
+                    fundamental skills
+                  </CardItem>
+
+                  <div className="flex-grow flex items-center">
+                    <CardItem
+                      as="p"
+                      translateZ="60"
+                      className=" text-sm max-w-sm mt-2 px-5 "
+                    >
+                      The project was created during the early days of my DCI
+                      journey. Live on Github Pages for you to explore the
+                      included early Projects as well. For instance my first
+                      ever Website and a group project. These old Portfolio
+                      attempts are included in my projects to give you an idea
+                      of my progress as a Web Developer. I never updated them
+                      resulting in a genuine impression of where I started and
+                      how i developed (pun intended)
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
             </div>
           </div>
         </BackgroundGradient>
